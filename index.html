@@ -117,7 +117,7 @@ html,body{margin:0;height:100%;background:#050d1c;overflow:hidden;font-family:'D
 <svg viewBox="0 0 64 32" style="width:64px;height:32px;flex:none" aria-hidden="true"><path d="M0 11h40V2l24 14-24 14v-9H0z" fill="#1A5BB0"/></svg>
 <div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:40px;border:2px solid #1A5BB0;border-radius:18px">
 <h3 style="font-size:38px;font-weight:700;color:#0B1E3F">Branches</h3>
-<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Mississauga, Meadowview, Oakville</p>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Mississauga, Meadowvale, Oakville</p>
 </div>
 <svg viewBox="0 0 64 32" style="width:64px;height:32px;flex:none" aria-hidden="true"><path d="M0 11h40V2l24 14-24 14v-9H0z" fill="#1A5BB0"/></svg>
 <div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:40px;border:1px solid #DCE3EC;border-radius:18px">
@@ -360,7 +360,7 @@ html,body{margin:0;height:100%;background:#050d1c;overflow:hidden;font-family:'D
 <div style="display:flex;flex-direction:column;gap:16px;border-top:4px solid #7FB8EE;padding:32px 0px 0px 0px">
 <p style="font-size:64px;font-weight:700;color:#7FB8EE">1</p>
 <h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Pilot</h3>
-<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Start with MEADOWVALE for 20/30 weeks and collect feedback.</p>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Run a 4–6 week pilot at the Meadowvale branch, then review feedback before rolling out to other branches.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:16px;border-top:4px solid #7FB8EE;padding:32px 0px 0px 0px">
 <p style="font-size:64px;font-weight:700;color:#7FB8EE">2</p>
@@ -378,7 +378,7 @@ html,body{margin:0;height:100%;background:#050d1c;overflow:hidden;font-family:'D
 </section>
 
 </div>
-<div id="bar"><button id="prev" aria-label="Previous slide">&#8592;</button><span id="num"></span><button id="next" aria-label="Next slide">&#8594;</button><button id="fs">Full screen</button></div>
+<div id="bar"><button id="prevBtn" aria-label="Previous slide">&#8592;</button><span id="num"></span><button id="nextBtn" aria-label="Next slide">&#8594;</button><button id="fs">Full screen</button></div>
 <script>
 const s=[...document.querySelectorAll('.slide')];let i=0;
 const stage=document.getElementById('stage');
@@ -386,7 +386,8 @@ function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);stage.style.tr
 function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((e,j)=>e.classList.toggle('on',j===i));document.getElementById('num').textContent=(i+1)+' / '+s.length;history.replaceState(null,'','#'+(i+1))}
 addEventListener('resize',fit);
 addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}if(e.key==='Home')show(0);if(e.key==='End')show(s.length-1)});
-document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('prevBtn').onclick=()=>show(i-1);
+document.getElementById('nextBtn').onclick=()=>show(i+1);
 document.getElementById('fs').onclick=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
 stage.addEventListener('click',e=>{if(!e.target.closest('a'))show(e.clientX>innerWidth/2?i+1:i-1)});
 fit();show((parseInt(location.hash.slice(1))||1)-1);
