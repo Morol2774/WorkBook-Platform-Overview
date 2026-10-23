@@ -1,0 +1,393 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WorkBook Platform Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;height:100%;background:#050d1c;overflow:hidden;font-family:'DM Sans',Arial,sans-serif}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+.slide{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden}
+.slide:not(.on){display:none!important}
+.slide h1,.slide h2,.slide h3,.slide p,.slide ul,.slide ol{margin:0}
+.slide ul,.slide ol{padding-left:1.3em}
+.slide table{border-collapse:collapse;width:100%;overflow:hidden}
+.slide th{text-align:left;padding:14px 22px}.slide td{padding:14px 22px;border-top:1px solid #DCE3EC}
+.slide div{box-sizing:border-box}
+#bar{position:fixed;bottom:14px;right:18px;display:flex;gap:8px;align-items:center;font:14px Arial;color:#9FB3CC;z-index:5}
+#bar button{background:#14284d;color:#E1ECF9;border:1px solid #2A4775;border-radius:8px;padding:6px 12px;cursor:pointer;font:14px Arial}
+@media print{html,body{overflow:visible;background:#fff}#bar{display:none}#stage{position:static;transform:none!important;width:auto;height:auto}.slide,.slide:not(.on){display:flex!important;position:relative;page-break-after:always}}
+</style></head><body>
+<div id="stage">
+<section class="slide" id="cover" data-transition="fade" style="background:#0B1E3F;color:#F2F5FA;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="position:absolute;left:1240px;top:0px;width:680px;height:1080px;background:linear-gradient(160deg, #1A5BB0 0%, #0B1E3F 100%)"></div>
+<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#7FB8EE">CTDI · Internal platform</p>
+<div style="display:flex;flex-direction:column;gap:32px;width:1040px">
+<h1 style="font-size:144px;font-weight:700;line-height:1.0;color:#F2F5FA">WorkBook</h1>
+<p style="font-size:44px;line-height:1.3;color:#C9D6E8">One secure place for company news, branch updates and colleagues — across every CTDI branch.</p>
+</div>
+<p style="font-size:28px;color:#9FB3CC">Platform overview: features, roles and security · October 2026 · Presented by [Name]</p>
+
+</section>
+
+<section class="slide" id="what" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">What it is</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">A private company network, not a public social app</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 14.2c2.9.3 5 2.4 5 5.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3 style="font-size:40px;font-weight:700;color:#0B1E3F">One place</h3>
+<p style="font-size:30px;line-height:1.4;color:#3B4A5E">Company news, branch updates, colleagues and direct messages in a single app.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3 style="font-size:40px;font-weight:700;color:#0B1E3F">Invitation only</h3>
+<p style="font-size:30px;line-height:1.4;color:#3B4A5E">Nobody can sign up on their own. Every account starts from an invitation by a manager, HR or admin.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 12h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3 style="font-size:40px;font-weight:700;color:#0B1E3F">Built for many branches</h3>
+<p style="font-size:30px;line-height:1.4;color:#3B4A5E">Regions and branches mirror CTDI’s structure. Each person sees what is relevant to them.</p>
+</div>
+</div>
+<p style="font-size:28px;color:#3B4A5E">Runs in any browser today. The same code base is ready for Android, iOS and Windows apps.</p>
+
+</section>
+
+<section class="slide" id="features" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Features</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">Everything an employee needs day to day</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Feed</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Posts with photos, video or PDF; likes, comments, reporting.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Company news</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Official announcements, policies and events for the company, a region or a branch.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Messages</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Private one-to-one chats with replies, edits and read status.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Directory and branches</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Find colleagues by name or branch; each branch has its own page and feed.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Documents</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">PDFs open in a built-in viewer; download is a separate button.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:36px 40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Alerts</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Notifications for likes, comments and news addressed to you.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7F0FB;padding:36px 40px;border:1px solid #B9D2F0;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Moderation</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Managers review reported posts and remove or dismiss them.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7F0FB;padding:36px 40px;border:1px solid #B9D2F0;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Admin panel</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Roles and users, regions and branches, invitations, audit log.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7F0FB;padding:36px 40px;border:1px solid #B9D2F0;border-radius:18px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Security centre</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Two-factor sign-in and Windows Hello / fingerprint for managers.</p>
+</div>
+</div>
+
+</section>
+
+<section class="slide" id="structure" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:72px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Organisation</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">The app mirrors CTDI’s structure</h2>
+</div>
+<div style="display:flex;align-items:center;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#0B1E3F;padding:40px;border-radius:18px">
+<h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Company</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">CTDI as a whole</p>
+</div>
+<svg viewBox="0 0 64 32" style="width:64px;height:32px;flex:none" aria-hidden="true"><path d="M0 11h40V2l24 14-24 14v-9H0z" fill="#1A5BB0"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#1A5BB0;padding:40px;border-radius:18px">
+<h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Regions</h3>
+<p style="font-size:26px;line-height:1.4;color:#E1ECF9">e.g. Canada</p>
+</div>
+<svg viewBox="0 0 64 32" style="width:64px;height:32px;flex:none" aria-hidden="true"><path d="M0 11h40V2l24 14-24 14v-9H0z" fill="#1A5BB0"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:40px;border:2px solid #1A5BB0;border-radius:18px">
+<h3 style="font-size:38px;font-weight:700;color:#0B1E3F">Branches</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Mississauga, Meadowview, Oakville</p>
+</div>
+<svg viewBox="0 0 64 32" style="width:64px;height:32px;flex:none" aria-hidden="true"><path d="M0 11h40V2l24 14-24 14v-9H0z" fill="#1A5BB0"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FBFCFE;padding:40px;border:1px solid #DCE3EC;border-radius:18px">
+<h3 style="font-size:38px;font-weight:700;color:#0B1E3F">People</h3>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E">Each belongs to one branch</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:32px;line-height:1.4;color:#3B4A5E">Admins create, rename and remove regions and branches directly in the app (Admin → Structure).</p>
+<p style="font-size:32px;line-height:1.4;color:#3B4A5E">Safeguards: a branch with employees, or a region with branches, cannot be deleted. Every change is logged.</p>
+</div>
+
+</section>
+
+<section class="slide" id="roles" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Roles</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#0B1E3F">Eight roles, each limited to its own scope</h2>
+</div>
+<table style="font-family:'DM Sans', Arial, sans-serif;font-size:26px;color:#0B1E3F;background:#FBFCFE;border:1px solid #DCE3EC;border-radius:16px">
+<tr style="background:#0B1E3F"><th style="width:24%;color:#F2F5FA">Role</th><th style="width:76%;color:#F2F5FA">What they can do</th></tr>
+<tr><td>Guest</td><td>Read only: feed, news, directory</td></tr>
+<tr style="background:#EEF2F8"><td>Employee</td><td>Post, comment, like, send messages, report posts</td></tr>
+<tr><td>Team lead</td><td>Same as employee; shown as a team lead in the directory</td></tr>
+<tr style="background:#EEF2F8"><td>HR</td><td>Invite and archive staff in own branch; news for own branch or region</td></tr>
+<tr><td>Branch manager</td><td>Moderate, invite, archive and publish news in own branch</td></tr>
+<tr style="background:#EEF2F8"><td>Regional manager</td><td>The same for every branch in the region, plus region-wide news</td></tr>
+<tr><td>Global admin</td><td>Whole company: roles, structure, company-wide news, audit log</td></tr>
+<tr style="background:#EEF2F8"><td>Super admin</td><td>Everything above, plus appoints global admins and deletes accounts</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.4;color:#3B4A5E"><b>Rule:</b> nobody can grant a role equal to or higher than their own. HR and managers invite only guests, employees and team leads.</p>
+
+</section>
+
+<section class="slide" id="news" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Company news</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">The right news reaches the right people</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:20px;background:#0B1E3F;padding:48px;border-radius:20px">
+<p style="font-size:26px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#7FB8EE">Global</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.2;color:#F2F5FA">Everyone in the company</h3>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Published by global admins and the super admin.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#1A5BB0;padding:48px;border-radius:20px">
+<p style="font-size:26px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#E1ECF9">Region</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.2;color:#F2F5FA">All branches in one region</h3>
+<p style="font-size:28px;line-height:1.4;color:#E1ECF9">Published by regional managers and HR of that region.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#FBFCFE;padding:48px;border:2px solid #1A5BB0;border-radius:20px">
+<p style="font-size:26px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#1A5BB0">Branch</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.2;color:#0B1E3F">One branch only</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">Published by its branch manager, HR, or the regional manager.</p>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#3B4A5E">Each item is tagged <b>Announcement</b>, <b>Policy</b> or <b>Event</b>. Readers in the audience get a notification; nobody outside it can see the item.</p>
+
+</section>
+
+<section class="slide" id="lifecycle" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Joining and leaving</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">Access is granted and removed by managers</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+<div style="display:flex;flex-direction:column;gap:24px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<h3 style="font-size:40px;font-weight:700;color:#0B1E3F">New employee</h3>
+<ol style="font-size:30px;line-height:1.5;color:#3B4A5E">
+<li>Manager, HR or admin creates an invitation for a work email</li>
+<li>Employee registers with that email and confirms it</li>
+<li>Role and branch are applied automatically from the invitation</li>
+</ol>
+<p style="font-size:26px;line-height:1.4;color:#1A5BB0">Invitations expire after 14 days.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<h3 style="font-size:40px;font-weight:700;color:#0B1E3F">Employee leaves</h3>
+<ol style="font-size:30px;line-height:1.5;color:#3B4A5E">
+<li>Manager or HR archives the profile</li>
+<li>Access stops immediately, including open sessions</li>
+<li>Super admin then deletes the account for good, or restores it</li>
+</ol>
+<p style="font-size:26px;line-height:1.4;color:#1A5BB0">Every step is recorded in the audit log.</p>
+</div>
+</div>
+
+</section>
+
+<section class="slide" id="rules" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Rules of use</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">Built-in limits stop spam and abuse</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+<table style="font-family:'DM Sans', Arial, sans-serif;font-size:26px;color:#0B1E3F;background:#FBFCFE;border:1px solid #DCE3EC;border-radius:16px">
+<tr style="background:#0B1E3F"><th style="width:50%;color:#F2F5FA">Action</th><th style="width:50%;color:#F2F5FA">Limit per person</th></tr>
+<tr><td>Posts</td><td>5 a minute, 40 an hour</td></tr>
+<tr style="background:#EEF2F8"><td>Comments</td><td>10 a minute, 200 an hour</td></tr>
+<tr><td>Messages</td><td>30 a minute</td></tr>
+<tr style="background:#EEF2F8"><td>File uploads</td><td>30 a minute, 500 a day</td></tr>
+<tr><td>News items</td><td>20 an hour</td></tr>
+<tr style="background:#EEF2F8"><td>Invitations</td><td>50 a day</td></tr>
+</table>
+<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:34px;font-weight:700;color:#0B1E3F">Files</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">Photos, video up to 50 MB, PDF up to 20 MB. Word, Excel and other file types are blocked.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:34px;font-weight:700;color:#0B1E3F">Reporting</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">Any employee can report a post. The branch or regional manager removes it or dismisses the report.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:34px;font-weight:700;color:#0B1E3F">Passwords</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">At least 12 characters. Managers and admins also use two-factor sign-in.</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="slide" id="security" data-transition="fade" style="background:#0B1E3F;color:#F2F5FA;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#7FB8EE">Security</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#F2F5FA">Several independent layers of protection</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Closed entry</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Invitation-only sign-up; email must be confirmed.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Two-factor for power</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Admin and manager actions work only after a code or fingerprint check.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Rules in the database</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Every table denies access by default. Tricking the app cannot bypass it.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Private files</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Links work for 2 hours and only for people allowed to see the post.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Attack resistance</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Protection against injection, impersonation and request flooding.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#142C55;padding:36px 40px;border:1px solid #2A4775;border-radius:18px">
+<h3 style="font-size:34px;font-weight:700;color:#F2F5FA">Audit trail</h3>
+<p style="font-size:26px;line-height:1.4;color:#C9D6E8">Admin actions are logged; the log cannot be edited or erased.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Error messages never reveal internal details or whether an email is registered.</p>
+
+</section>
+
+<section class="slide" id="tested" data-transition="fade" style="background:#1A5BB0;color:#F2F5FA;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#E1ECF9">Tested before launch</p>
+<h1 style="font-size:240px;font-weight:700;line-height:1.0;color:#F2F5FA">235 of 235</h1>
+<p style="font-size:48px;line-height:1.3;color:#F2F5FA;width:1400px">simulated attacks were blocked, while normal actions kept working.</p>
+<p style="font-size:30px;line-height:1.4;color:#E1ECF9;width:1500px">Covered: giving yourself admin rights, reading other people’s chats and files, skipping two-factor, forging the author of a post, injection, and spam.</p>
+
+</section>
+
+<section class="slide" id="privacy" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Data and privacy</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">Employee data stays in Canada and stays minimal</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;gap:28px;align-items:start;background:#FBFCFE;padding:44px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Canadian hosting</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">Database and files are stored in the Canada (Central) region.</p>
+</div>
+</div>
+<div style="display:flex;gap:28px;align-items:start;background:#FBFCFE;padding:44px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.5 15.5 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">No hidden location data</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">GPS and camera details are removed from every photo before upload.</p>
+</div>
+</div>
+<div style="display:flex;gap:28px;align-items:start;background:#FBFCFE;padding:44px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><circle cx="7.5" cy="14.5" r="4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.7 11.3 20 2m-4 4 3 3m-5.5-.5 2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Need-to-know access</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">People see their branch, their region and company-wide content only.</p>
+</div>
+</div>
+<div style="display:flex;gap:28px;align-items:start;background:#FBFCFE;padding:44px;border:1px solid #DCE3EC;border-radius:20px">
+<svg viewBox="0 0 24 24" style="color:#1A5BB0;width:56px;height:56px;flex:none" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m8 12 3 3 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:36px;font-weight:700;color:#0B1E3F">Right to be removed</h3>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">A departing employee’s account and content can be deleted completely.</p>
+</div>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#3B4A5E">A privacy policy under PIPEDA (Canada’s privacy law) will be published before launch.</p>
+
+</section>
+
+<section class="slide" id="status" data-transition="fade" style="background:#F4F6FA;color:#0B1E3F;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1A5BB0">Status</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#0B1E3F">Working today; a short list before full launch</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+<div style="display:flex;flex-direction:column;gap:24px;background:#FBFCFE;padding:48px;border:1px solid #DCE3EC;border-radius:20px">
+<h3 style="font-size:40px;font-weight:700;color:#1F6E52">Done</h3>
+<ul style="font-size:28px;line-height:1.5;color:#3B4A5E">
+<li>All features on slide 3, running in the browser</li>
+<li>Roles, invitations and branch structure</li>
+<li>Database protection and the full attack test suite</li>
+<li>Two-factor sign-in for managers and admins</li>
+<li>Demo site online for review</li>
+</ul>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px;background:#FBFCFE;padding:48px;border:2px solid #1A5BB0;border-radius:20px">
+<h3 style="font-size:40px;font-weight:700;color:#1A5BB0">Before launch</h3>
+<ul style="font-size:28px;line-height:1.5;color:#3B4A5E">
+<li>Company web address and email sender</li>
+<li>Bot check (CAPTCHA) on sign-in</li>
+<li>Fingerprint / Windows Hello for managers</li>
+<li>Paid hosting tier with daily backups</li>
+<li>Privacy policy (PIPEDA)</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section class="slide" id="next" data-transition="fade" style="background:#0B1E3F;color:#F2F5FA;font-family:'DM Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#7FB8EE">Next steps</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;color:#F2F5FA">Decisions needed to move forward</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;border-top:4px solid #7FB8EE;padding:32px 0px 0px 0px">
+<p style="font-size:64px;font-weight:700;color:#7FB8EE">1</p>
+<h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Pilot</h3>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Start with [branch] for [number] weeks and collect feedback.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:4px solid #7FB8EE;padding:32px 0px 0px 0px">
+<p style="font-size:64px;font-weight:700;color:#7FB8EE">2</p>
+<h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Owners</h3>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Name the global admins and the people who approve news.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:4px solid #7FB8EE;padding:32px 0px 0px 0px">
+<p style="font-size:64px;font-weight:700;color:#7FB8EE">3</p>
+<h3 style="font-size:38px;font-weight:700;color:#F2F5FA">Setup</h3>
+<p style="font-size:28px;line-height:1.4;color:#C9D6E8">Approve the web address, email sender and hosting tier.</p>
+</div>
+</div>
+<p style="font-size:32px;color:#C9D6E8">Questions and live demo</p>
+
+</section>
+
+</div>
+<div id="bar"><button id="prev" aria-label="Previous slide">&#8592;</button><span id="num"></span><button id="next" aria-label="Next slide">&#8594;</button><button id="fs">Full screen</button></div>
+<script>
+const s=[...document.querySelectorAll('.slide')];let i=0;
+const stage=document.getElementById('stage');
+function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform='translate(-50%,-50%) scale('+k+')'}
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((e,j)=>e.classList.toggle('on',j===i));document.getElementById('num').textContent=(i+1)+' / '+s.length;history.replaceState(null,'','#'+(i+1))}
+addEventListener('resize',fit);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}if(e.key==='Home')show(0);if(e.key==='End')show(s.length-1)});
+document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('fs').onclick=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+stage.addEventListener('click',e=>{if(!e.target.closest('a'))show(e.clientX>innerWidth/2?i+1:i-1)});
+fit();show((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>
